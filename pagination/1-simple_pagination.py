@@ -57,6 +57,6 @@ class Server:
         start, end = index_range(page, page_size)
 
         if start >= len(dataset):
-            return[]
+            return []
 
         return dataset[start:end]
