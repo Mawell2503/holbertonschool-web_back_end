@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import csv
 import math
-import pandas as pd
 from typing import List
 
 """This file handles pagination"""
@@ -27,7 +26,7 @@ def index_range(page, page_size):
 
 class Server:
     """Server class to paginate a database of popular baby names."""
-    DATA_FILE = "Popular_Baby_Names.csv"
+    DATA_FILE = "pagination/Popular_Baby_Names.csv"
 
     def __init__(self):
         self.__dataset = None
@@ -48,7 +47,7 @@ class Server:
         assert isinstance(page, int) and page > 0
         assert isinstance(page_size, int) and page_size > 0
 
-        dataset = self.dataset
+        dataset = self.dataset()
 
         start, end = index_range(page, page_size)
 
