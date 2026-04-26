@@ -4,7 +4,12 @@ import math
 import os
 from typing import List
 
-"""This file handles pagination"""
+"""
+Module for implementing simple pagination of a dataset.
+
+This module provides a function to calculate index ranges
+and a Server class to paginate a CSV dataset.
+"""
 
 
 def index_range(page, page_size):
