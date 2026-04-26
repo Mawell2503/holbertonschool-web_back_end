@@ -25,6 +25,7 @@ def index_range(page, page_size):
     tuple = (start_ind, end_ind)
     return tuple
 
+
 class Server:
     """Server class to paginate a database of popular baby names."""
     DATA_FILE = os.path.join(os.path.dirname(__file__), "Popular_Baby_Names.csv")
@@ -54,5 +55,5 @@ class Server:
 
         if start >= len(dataset):
             return[]
-        
+
         return dataset[start:end]
