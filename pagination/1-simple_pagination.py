@@ -22,11 +22,12 @@ def index_range(page, page_size):
     It returns the first and last index of the page
 
     Args:
-    page
-    page_size
+        page(int): The current page number
+        page_size(int): The number of items per page
 
-    Return:
-    Tuple (first_ind, end_ind)
+    Returns:
+        Tuple[first_ind, end_ind]:
+        A tuple containing the start index and the end index 
     """
     #  why (page - 1)? -> computers starts counting from 0
     start_ind = (page - 1) * page_size
@@ -56,6 +57,8 @@ class Server:
     def dataset(self) -> List[List]:
         """
         Cached dataset that is loaded from the CSV file.
+        Returns:
+            List[list]: The cahced dataset, excluding the header row
         """
         if self.__dataset is None:
             with open(self.DATA_FILE) as f:
