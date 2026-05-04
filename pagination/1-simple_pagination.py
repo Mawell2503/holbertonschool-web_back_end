@@ -38,7 +38,7 @@ def index_range(page, page_size):
 class Server:
     """
     Server class to paginate a database of popular baby names.
-    
+
     Attributes:
         DATA_FILE (str): Thepath to the CSV data source.
     """
@@ -68,12 +68,12 @@ class Server:
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         """
         Return a page of data from the dataset
-        
+
         Args:
             page(int): The page number to retrieve. Must be > 0.
             page_size(int): The number of items per page. Must be > 0.
-            
-            
+
+
         Returns:
             List[List[str]]: A loist of rows corresponding to the page.
             Returns an empty list if the range is out of bounds
