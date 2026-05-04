@@ -36,17 +36,27 @@ def index_range(page, page_size):
 
 
 class Server:
-    """Server class to paginate a database of popular baby names."""
+    """
+    Server class to paginate a database of popular baby names.
+    
+    Attributes:
+        DATA_FILE (str): Thepath to the CSV data source.
+    """
     DATA_FILE = os.path.join(
         os.path.dirname(__file__),
         "Popular_Baby_Names.csv"
      )
 
     def __init__(self):
+        """
+        Initialize a new dataset instance with an empty dataset cache.
+        """
         self.__dataset = None
 
     def dataset(self) -> List[List]:
-        """Cached dataset"""
+        """
+        Cached dataset that is loaded from the CSV file.
+        """
         if self.__dataset is None:
             with open(self.DATA_FILE) as f:
                 reader = csv.reader(f)
@@ -56,7 +66,18 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
-        """Return a page of dataset"""
+        """
+        Return a page of data from the dataset
+        
+        Args:
+            page(int): The page number to retrieve. Must be > 0.
+            page_size(int): The number of items per page. Must be > 0.
+            
+            
+        Returns:
+            List[List[str]]: A loist of rows corresponding to the page.
+            Returns an empty list if the range is out of bounds
+        """
 
         assert isinstance(page, int) and page > 0
         assert isinstance(page_size, int) and page_size > 0
