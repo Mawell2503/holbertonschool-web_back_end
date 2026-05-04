@@ -27,7 +27,7 @@ def index_range(page, page_size):
 
     Returns:
         Tuple[first_ind, end_ind]:
-        A tuple containing the start index and the end index 
+        A tuple containing the start index and the end index
     """
     #  why (page - 1)? -> computers starts counting from 0
     start_ind = (page - 1) * page_size
