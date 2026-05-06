@@ -59,7 +59,7 @@ class Server:
                 data.append(item)
             current_index += 1
 
-        return{
+        return {
             "index": index,
             "next_index": current_index,
             "page_size": len(data),
