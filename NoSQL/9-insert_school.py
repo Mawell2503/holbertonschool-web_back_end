@@ -12,4 +12,4 @@ def insert_school(mango_collection, **kwargs):
     """
     #  insert_one() is a method that adds a single document into a collection.
     new_id = mango_collection.insert_one(kwargs)
-    return new_id
+    return new_id.inserted_ids
