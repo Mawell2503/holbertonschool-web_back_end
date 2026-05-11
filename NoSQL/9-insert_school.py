@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+"""Function that inserts a new doc"""
+
 def insert_school(mango_collection, **kwargs):
     """
     Insert a  new document into a collection baswed on the provided kwargs
