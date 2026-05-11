@@ -12,7 +12,6 @@ def schools_by_topic(mongo_collection, topic):
     Returns:
         List of school documents (dictionaries)
     """
-    # Find all documents where the 'topics' array contains the specific topic
     schools = mongo_collection.find({ "topics": topic })
     
     return list(schools)

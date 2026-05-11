@@ -56,8 +56,16 @@ db.school.deleteMany({ name: "Holberton school" }) >>>
 deleteMany() deletes every document thaat matches the filter
 
 8-all.py
+---
 
 9-insert_school
+---
+
 10-update_topics
+---
+
 11-schools_by_topic
+---
+
 12-log_stats
+---

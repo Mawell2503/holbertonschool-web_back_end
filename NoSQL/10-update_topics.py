@@ -10,6 +10,7 @@ def update_topics(mongo_collection, name, topics):
         name (str): school name to update
         topics (list of str): list of topics approached in the school
     """
+    #  update_many() equivalent of updateMany()
     mongo_collection.update_many(
         { "name": name },
         { "$set": { "topics": topics } }
