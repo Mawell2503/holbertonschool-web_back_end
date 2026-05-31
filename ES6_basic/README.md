@@ -10,3 +10,5 @@ __this__ & __new__
 __this__ is utilise inside functions when you want the function to behave like a class.
 it initiates variables, objects and instances that makes a function act and behave like a class.
 __new__ is what turns the gibberish that this created into a proper class.
+
+__...__ is a tool in javascript that combnines
