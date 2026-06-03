@@ -6,7 +6,7 @@
 **var** an old way to declare variables that isnt used today but is pratical.
 > compared to **let** and **const**, **var** can work in and outside function block.
 
-## JS Function
+## JS Function's Keywords
 
 __...__ (spread syntax/rest parameter) is a powerful tool in javascript.
 >> It acts like a net. It gathers up all individual arguments passed into the function and "envelops" them together into a single, neat array
@@ -20,6 +20,3 @@ __this__
 
 __new__
 >> is what turns the gibberish that this created into a proper class.
-
-__constructor__
->>
