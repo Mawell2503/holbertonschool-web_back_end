@@ -17,8 +17,9 @@ __...__ (spread syntax/rest parameter) is a powerful tool in javascript.
 __this__
 >> utilised inside functions when you want the function to behave like a class.
 >> initiates variables, objects and instances that makes a function act and behave like a class.
+
 __new__
 >> is what turns the gibberish that this created into a proper class.
 
-
-
+__constructor__
+>>
